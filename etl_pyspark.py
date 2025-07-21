@@ -14,9 +14,9 @@ if __name__ == '__main__':
     spark = create_spark_session()
 
     #Get the environment variables
-    TRIP_DATA_PATH = os.environ.get('TRIP_DATA_PATH', 'gs://new-york-taxi-    data-bucket/trip_data/trip_data_test.csv')
-    FARE_DATA_PATH = os.environ.get('FARE_DATA_PATH', 'gs://new-york-taxi-data-bucket/fare_data/fare_data_test.csv')
-    BUCKET_NAME = os.environ.get('BUCKET_NAME', 'new-york-taxi-tutorial-project-temporary-bucket')
+    TRIP_DATA_PATH = os.environ.get('TRIP_DATA_PATH', 'gs://taxi-data-project-463613/data/trip_data/trip_data_test.csv')
+    FARE_DATA_PATH = os.environ.get('FARE_DATA_PATH', 'gs://taxi-data-project-463613/data/fare_data/fare_data_test.csv')
+    BUCKET_NAME = os.environ.get('BUCKET_NAME', 'new-york-taxi-tutorial-project-temporary-buck')
     BQ_DATASET = os.environ.get('BQ_DATASET', 'new_york_taxi_bq_dataset')
     BQ_TABLE = os.environ.get('BQ_TABLE', 'new_york_taxi_bq_table')
     
